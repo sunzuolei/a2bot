@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_active="true" android:drawable="@drawable/edittext_normal_focus" />
+    <!--获得焦点时的图片背景  -->
+    <item android:state_focused="true" android:drawable="@drawable/edittext_normal_focus" />
+    <!-- 单击时的图片背景 -->
+    <item android:state_pressed="true" android:drawable="@drawable/edittext_normal_press" />
+    <!-- 不响应事件时 -->
+    <item android:state_enabled="false" android:drawable="@drawable/edittext_normal_normal" />
+    <!-- 响应事件时 -->
+    <item android:state_enabled="true" android:drawable="@drawable/edittext_normal_normal" />
+</selector>

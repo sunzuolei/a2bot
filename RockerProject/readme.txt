@@ -1,0 +1,6 @@
+此工程是上位机控制的android端app。 
+
+bin目录下是编译好的文件和apk
+src目录下是源代码
+res目录下是界面素材
+androidManifest.xml工程主配置文件

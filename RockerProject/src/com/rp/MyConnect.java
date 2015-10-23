@@ -28,7 +28,7 @@ public class MyConnect implements Runnable{
     //连接成功flag
     boolean issuccess = false;
     
-    MyConnect(String ipaddr, int port){
+    public MyConnect(String ipaddr, int port){
     	this.ipconfig = ipaddr;
     	this.mport = port;
     }
@@ -38,6 +38,7 @@ public class MyConnect implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
     	try {
+    		Log.v(TAG,ipconfig + ":"+mport);
     		mSocket = new Socket();
     		mSocket.connect(new InetSocketAddress(ipconfig, mport), 5000);  		
     		//取得输入或者输出流

@@ -1,5 +1,7 @@
 package com.rp;
 
+import com.antlersoft.util.MySurfaceView;
+
 public class DirectionMonitor implements Runnable {
 
 	//
@@ -9,7 +11,7 @@ public class DirectionMonitor implements Runnable {
 	//
 	boolean lastDir=true;
 	
-	DirectionMonitor(MySurfaceView msf, MyConnect mc) {
+	public DirectionMonitor(MySurfaceView msf, MyConnect mc) {
 		dmsf = msf;
 		mmc = mc;
 		

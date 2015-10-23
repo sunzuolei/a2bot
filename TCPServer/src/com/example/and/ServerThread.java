@@ -71,8 +71,13 @@ public class ServerThread extends Thread {
 					sendMessageToAllClient("离开聊天室！");
 					break;
 				
-				}System.out.println(str);
+				}
 				//接收控制信息并转化为键盘响应
+				if(str==null){
+					continue;
+				}else{
+					System.out.println(str);
+				}
 				if(str.contentEquals("1")){
 					pressKey(this.robot, KeyEvent.VK_UP);
 					
@@ -127,4 +132,3 @@ public class ServerThread extends Thread {
 	}
 
 }
-
